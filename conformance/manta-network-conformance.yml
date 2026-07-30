@@ -1,0 +1,41 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.manta.network/docs/manta-pacific/EVM%20Compatible
+note: >-
+  Standards conformance for a modular Layer-2 blockchain. Manta Pacific exposes the
+  standard Ethereum JSON-RPC interface; Manta Atlantic exposes the Substrate/Polkadot
+  JSON-RPC interface. No REST/OpenAPI, OAuth2/OIDC, or RFC 9457 problem-details
+  surface is published, so those web-API standards are marked not-applicable.
+standards:
+  - id: ethereum-json-rpc
+    conforms: true
+    evidence: Manta Pacific is fully EVM-compatible and serves standard eth_* JSON-RPC methods at pacific-rpc.manta.network
+  - id: evm
+    conforms: true
+    evidence: Manta Pacific chain is fully compatible with the Ethereum Virtual Machine (EVM Compatible docs page)
+  - id: eip-1559
+    conforms: true
+    evidence: Ethereum-compatible gas/fee market on the OP Stack rollup (Build on Manta > Fees)
+  - id: op-stack
+    conforms: true
+    evidence: Manta Pacific is built on the Optimism OP Stack (concepts/OPStack)
+  - id: celestia-data-availability
+    conforms: true
+    evidence: Manta Pacific uses Celestia for modular data availability (concepts/Celestia)
+  - id: substrate-json-rpc
+    conforms: true
+    evidence: Manta Atlantic is a Polkadot parachain exposing Substrate JSON-RPC over WebSocket at wss://ws.manta.systems
+  - id: polkadot-parachain
+    conforms: true
+    evidence: Manta Atlantic is a Polkadot parachain (Para ID 2104); Calamari is a Kusama parachain (Para ID 2084)
+  - id: ss58-address-format
+    conforms: true
+    evidence: Manta Atlantic uses SS58 account prefix 77 (Calamari 78)
+  - id: oauth2
+    conforms: false
+  - id: openid-connect
+    conforms: false
+  - id: rfc9457-problem-details
+    conforms: false
+  - id: openapi
+    conforms: false

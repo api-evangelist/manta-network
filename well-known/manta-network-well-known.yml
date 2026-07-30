@@ -1,0 +1,38 @@
+generated: '2026-07-20'
+method: searched
+source: live probe of /.well-known/* across Manta Network hosts
+note: >-
+  No valid RFC-standard .well-known discovery documents were found. app.manta.network
+  returns HTTP 200 for every path but serves the SPA index HTML (content-type
+  text/html) rather than a real well-known document, so those 200s are recorded as
+  spa-catchall and are NOT treated as published discovery documents. No security.txt,
+  OpenID/OAuth metadata, api-catalog, or ai-plugin.json is published.
+hosts:
+  - host: https://manta.network
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}
+  - host: https://docs.manta.network
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}
+  - host: https://pacific-explorer.manta.network
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}
+  - host: https://app.manta.network
+    documents:
+      - {path: /.well-known/security.txt, status: 200, content_type: text/html, result: spa-catchall}
+      - {path: /.well-known/openid-configuration, status: 200, content_type: text/html, result: spa-catchall}
+      - {path: /.well-known/oauth-authorization-server, status: 200, content_type: text/html, result: spa-catchall}
+      - {path: /.well-known/api-catalog, status: 200, content_type: text/html, result: spa-catchall}
+      - {path: /.well-known/ai-plugin.json, status: 200, content_type: text/html, result: spa-catchall}

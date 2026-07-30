@@ -1,0 +1,23 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.manta.network/docs/manta-pacific/Testnet%20Info
+note: >-
+  Public test network for Manta Pacific. Developers deploy and test against the
+  Sepolia testnet using the same EVM/JSON-RPC tooling as mainnet, funding accounts
+  from the network faucet. No API keys or hosted test credentials are used — access
+  is via public RPC endpoints.
+test_network:
+  name: Manta Pacific Sepolia Testnet
+  chain_id: 3441006
+  currency_symbol: ETH
+  network_url: https://pacific-info.sepolia-testnet.manta.network/
+  rpc_url: https://pacific-rpc.sepolia-testnet.manta.network/http
+  websocket_url: wss://pacific-rpc.sepolia-testnet.manta.network/ws
+  explorer_url: https://pacific-explorer.sepolia-testnet.manta.network
+faucet:
+  docs: https://docs.manta.network/docs/manta-pacific/Tools/Network%20Faucets
+  note: Request testnet ETH via the Manta Pacific network faucet; assets can also be bridged from an Ethereum testnet.
+mainnet_reference:
+  name: Manta Pacific L2 Rollup
+  chain_id: 169
+  rpc_url: https://pacific-rpc.manta.network/http

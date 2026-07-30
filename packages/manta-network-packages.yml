@@ -1,0 +1,39 @@
+generated: '2026-07-20'
+method: derived
+source: https://github.com/manta-network
+note: >-
+  First-party libraries and starter tooling published by the official manta-network
+  GitHub organization. Registry publication (crates.io/npm) was not verified during
+  this pass, so each entry cites its canonical GitHub source repository. manta-rs is
+  the primary Rust SDK/crate collection for building on the Manta ecosystem.
+packages:
+  - language: rust
+    registry: github
+    name: manta-rs
+    url: https://github.com/manta-network/manta-rs
+    description: Rust crates for the Manta Network ecosystem (ZKP primitives and client tooling).
+    official: true
+  - language: rust
+    registry: github
+    name: Manta
+    url: https://github.com/manta-network/Manta
+    description: Main repository for the Manta blockchain nodes (Substrate/Polkadot parachain).
+    official: true
+  - language: typescript
+    registry: github
+    name: react-dapp-starter
+    url: https://github.com/manta-network/react-dapp-starter
+    description: Starter template for building decentralized applications on Manta Pacific.
+    official: true
+  - language: javascript
+    registry: github
+    name: manta-pacific-token-list
+    url: https://github.com/manta-network/manta-pacific-token-list
+    description: Canonical token registry for the Manta Pacific network.
+    official: true
+  - language: css
+    registry: github
+    name: manta-signer
+    url: https://github.com/manta-network/manta-signer
+    description: Manta client to accelerate zero-knowledge proof generation.
+    official: true

@@ -1,0 +1,43 @@
+# Manta Network
+
+> Manta Network is a modular Layer-2 blockchain ecosystem for zero-knowledge (ZK) applications. It comprises Manta Pacific — an EVM-compatible Ethereum Layer-2 rollup built on the OP Stack that uses Celestia for data availability — and Manta Atlantic, a Polkadot parachain focused on on-chain ZK identity and privacy. Developers interact with Manta Pacific via standard Ethereum JSON-RPC (chain ID 169) and with Manta Atlantic via Substrate/Polkadot JSON-RPC over WebSocket.
+
+## Networks / Endpoints
+
+- [Manta Pacific Network Information](https://docs.manta.network/docs/manta-pacific/Build%20on%20Manta/Network%20Information): EVM L2 rollup — RPC https://pacific-rpc.manta.network/http, WSS wss://pacific-rpc.manta.network/ws, Chain ID 169, currency ETH
+- [Manta Pacific Sepolia Testnet](https://docs.manta.network/docs/manta-pacific/Testnet%20Info): RPC https://pacific-rpc.sepolia-testnet.manta.network/http, WSS wss://pacific-rpc.sepolia-testnet.manta.network/ws, Chain ID 3441006
+- [Manta Atlantic Network Information](https://docs.manta.network/docs/manta-atlantic/Network%20Information): Polkadot parachain (Para ID 2104) — RPC wss://ws.manta.systems, native token MANTA
+- [JSON-RPC Nodes](https://docs.manta.network/docs/manta-pacific/JSON-RPC%20Nodes): JSON-RPC node reference for Manta Pacific
+
+## Docs
+
+- [Documentation Home](https://docs.manta.network/)
+- [Introduction](https://docs.manta.network/docs/Introduction)
+- [Quickstart (Manta Pacific)](https://docs.manta.network/docs/manta-pacific/Quickstart)
+- [EVM Compatibility](https://docs.manta.network/docs/manta-pacific/EVM%20Compatible)
+- [Build on Manta — Contracts](https://docs.manta.network/docs/manta-pacific/Build%20on%20Manta/Contracts)
+- [Build on Manta — Fees](https://docs.manta.network/docs/manta-pacific/Build%20on%20Manta/Fees)
+- [Differences between Ethereum and Manta](https://docs.manta.network/docs/manta-pacific/Build%20on%20Manta/Differences%20between%20Ethereum%20and%20MantaNetwork)
+- [Roadmap](https://docs.manta.network/docs/concepts/Roadmap)
+
+## Tools
+
+- [Block Explorer (Blockscout)](https://pacific-explorer.manta.network/)
+- [Block Explorer (SocialScan)](https://manta.socialscan.io/)
+- [Network Faucets (testnet)](https://docs.manta.network/docs/manta-pacific/Tools/Network%20Faucets)
+- [Node Providers](https://docs.manta.network/docs/manta-pacific/Tools/Node%20Providers)
+- [Data Indexers](https://docs.manta.network/docs/manta-pacific/Tools/Data%20Indexers)
+- [Oracles](https://docs.manta.network/docs/manta-pacific/Tools/Oracles)
+- [Native Bridge](https://docs.manta.network/docs/manta-pacific/Tools/Bridge/Native%20Bridge/How%20to%20Use%20Native%20Bridge)
+
+## Source
+
+- [GitHub Organization](https://github.com/manta-network)
+- [manta (blockchain node)](https://github.com/manta-network/Manta)
+- [manta-rs (Rust ecosystem crates)](https://github.com/manta-network/manta-rs)
+- [react-dapp-starter](https://github.com/manta-network/react-dapp-starter)
+- [manta-pacific-token-list](https://github.com/manta-network/manta-pacific-token-list)
+
+## Blog
+
+- [Manta Network on Medium](https://mantanetwork.medium.com/)
