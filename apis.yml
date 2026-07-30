@@ -1,8 +1,28 @@
 aid: manta-network
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/manta-network.png
 name: Manta Network
-description: 'Manta Network is a company surfaced as a portfolio company of polychain and added to the
-  API Evangelist network as a stub for enrichment. Sector: layer-2. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  Manta Network is a modular Layer-2 blockchain ecosystem for zero-knowledge (ZK)
+  applications, comprising two complementary networks. Manta Pacific is an
+  EVM-compatible Ethereum Layer-2 rollup built on the Optimism OP Stack that uses
+  Celestia for modular data availability, giving developers low-gas deployment of ZK
+  applications through the standard Ethereum JSON-RPC interface (chain ID 169). Manta
+  Atlantic is a Polkadot parachain (Para ID 2104) focused on on-chain ZK identity and
+  privacy, exposed through Substrate/Polkadot JSON-RPC over WebSocket. Developers build
+  with familiar EVM tooling, deploy against a public Sepolia testnet and faucet, and
+  interact with the network via public RPC endpoints, block explorers, and native
+  bridges. Manta Network is backed by Polychain Capital and other investors.
 url: https://raw.githubusercontent.com/api-evangelist/manta-network/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +32,53 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Layer 2
-apis: []
+- Blockchain
+- Ethereum
+- EVM
+- Zero-Knowledge
+- Polkadot
+- Web3
+- Modular Blockchain
+- JSON-RPC
+apis:
+- name: Manta Pacific (EVM JSON-RPC)
+  description: >-
+    EVM-compatible Ethereum JSON-RPC endpoint for the Manta Pacific Layer-2 rollup
+    (chain ID 169, currency ETH). Serves standard eth_* JSON-RPC methods; a WebSocket
+    endpoint and public block explorers are also provided.
+  humanURL: https://docs.manta.network/docs/manta-pacific/Build%20on%20Manta/Network%20Information
+  baseURL: https://pacific-rpc.manta.network/http
+  tags:
+  - JSON-RPC
+  - Ethereum
+  - EVM
+  - Layer 2
+  properties:
+  - type: WebSocket
+    url: wss://pacific-rpc.manta.network/ws
+  - type: BlockExplorer
+    url: https://pacific-explorer.manta.network/
+  - type: Documentation
+    url: https://docs.manta.network/docs/manta-pacific/JSON-RPC%20Nodes
+- name: Manta Atlantic (Substrate JSON-RPC)
+  description: >-
+    Substrate/Polkadot parachain JSON-RPC endpoint (WebSocket) for Manta Atlantic
+    (Polkadot Para ID 2104, native token MANTA), focused on on-chain ZK identity and
+    privacy. The Calamari canary network runs on Kusama (Para ID 2084).
+  humanURL: https://docs.manta.network/docs/manta-atlantic/Network%20Information
+  baseURL: wss://ws.manta.systems
+  tags:
+  - JSON-RPC
+  - Substrate
+  - Polkadot
+  - Parachain
+  properties:
+  - type: BlockExplorer
+    url: https://manta.subscan.io
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,3 +87,36 @@ maintainers:
 common:
 - type: Website
   url: https://manta.network
+- type: DeveloperPortal
+  url: https://docs.manta.network/
+- type: Documentation
+  url: https://docs.manta.network/
+- type: APIReference
+  url: https://docs.manta.network/docs/manta-pacific/JSON-RPC%20Nodes
+- type: GettingStarted
+  url: https://docs.manta.network/docs/manta-pacific/Quickstart
+- type: GitHubOrganization
+  url: https://github.com/manta-network
+- type: Blog
+  url: https://mantanetwork.medium.com/
+- type: Roadmap
+  url: https://docs.manta.network/docs/concepts/Roadmap
+- type: WellKnown
+  url: well-known/manta-network-well-known.yml
+- type: Conformance
+  url: conformance/manta-network-conformance.yml
+- type: Packages
+  url: packages/manta-network-packages.yml
+- type: SDKs
+  url: packages/manta-network-packages.yml
+- type: LLMsTxt
+  url: llms/manta-network-llms.txt
+- type: Sandbox
+  url: sandbox/manta-network-sandbox.yml
+- type: DomainSecurity
+  url: security/manta-network-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1
