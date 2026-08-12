@@ -58,8 +58,6 @@ apis:
   - EVM
   - Layer 2
   properties:
-  - type: WebSocket
-    url: wss://pacific-rpc.manta.network/ws
   - type: BlockExplorer
     url: https://pacific-explorer.manta.network/
   - type: Documentation
