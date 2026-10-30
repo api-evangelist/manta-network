@@ -64,6 +64,89 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Manta Network is a company surfaced as a portfolio company of polychain and added to the API Evangelist network as a stub for enrichment. Sector: layer-2. This profile is a lead awaiting the enrichment pipeline.
+Manta Network is a modular Layer-2 blockchain ecosystem for zero-knowledge (ZK) applications, comprising two complementary networks. Manta Pacific is an EVM-compatible Ethereum Layer-2 rollup built on the Optimism OP Stack that uses Celestia for modular data availability, giving developers low-gas deployment of ZK applications through the standard Ethereum JSON-RPC interface (chain ID 169). Manta Atlantic is a Polkadot parachain (Para ID 2104) focused on on-chain ZK identity and privacy, exposed through Substrate/Polkadot JSON-RPC over WebSocket. Developers build with familiar EVM tooling, deploy against a public Sepolia testnet and faucet, and interact with the network via public RPC endpoints, block explorers, and native bridges. Manta Network is backed by Polychain Capital and other investors.
 
-Backed by: polychain — https://manta.network
+**Areas:** Company · Layer 2 · Blockchain · Ethereum · EVM · Zero Knowledge · Polkadot · Web3 · Modular Blockchain · JSON-RPC
+
+## Manta Network on APIs.io
+
+Everything profiled for Manta Network is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/manta-network/](https://apis.io/providers/manta-network/)** — or go straight to one of the APIs or properties below.
+
+### APIs (2)
+
+- [Manta Pacific (EVM JSON-RPC)](https://apis.io/apis/manta-network/manta-pacific-evm-json-rpc/) — EVM-compatible Ethereum JSON-RPC endpoint for the Manta Pacific Layer-2 rollup (chain ID 169, currency ETH). Serves standard eth_* JSON-RPC methods; a…
+- [Manta Atlantic (Substrate JSON-RPC)](https://apis.io/apis/manta-network/manta-atlantic-substrate-json-rpc/) — Substrate/Polkadot parachain JSON-RPC endpoint (WebSocket) for Manta Atlantic (Polkadot Para ID 2104, native token MANTA), focused on on-chain ZK identity…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Manta Network Domain Security](https://apis.io/security/manta-network/manta-network-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://manta.network)
+- [Documentation](https://docs.manta.network/)
+- [Getting started](https://docs.manta.network/docs/manta-pacific/Quickstart)
+- [API reference](https://docs.manta.network/docs/manta-pacific/JSON-RPC%20Nodes)
+- [Blog](https://mantanetwork.medium.com/)
+- [GitHub](https://github.com/manta-network)
+
+## API Evangelist rating
+
+**Kin Score 20.8** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 54.8 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/manta-network/](https://apis.io/providers/manta-network/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Manta Network: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/manta-network/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
